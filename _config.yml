@@ -1,0 +1,57 @@
+# Harmony Jekyll theme general configurations
+
+# Base URL
+baseurl:
+
+# Site live URL
+url:
+
+# Localhost
+# url:
+
+# Harmony theme configuration. Please change accordingly.
+harmony:
+  name: YuGe
+  # Little description about your site
+  description: 从里寻她，灯火阑珊
+  meta_description: This is YuGe's personal website.
+  basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
+  author: # Author details
+    name: 余歌
+    email: yuge@yuge.me
+    url: http://www.yuge.me
+
+  # Google Analytics key, leave blank to ignore
+  google_analytics_key: UA-62923339-1
+
+  # Profile links, leave blank to ignore
+  social:
+    github: yuge
+    twitter:
+    facebook:
+    gplus:
+    dribble:
+    pinterest:
+  # Toggle disclaimer in footer
+  show_disclaimer: false
+
+# Conversion / Build settings
+markdown:    kramdown
+# This is how you put pygments config in jekyll 2.0 instead of pygments: true
+highlighter: pygments
+
+# Permalinks
+permalink:        pretty
+
+exclude:
+  - Gemfile
+  - Rakefile
+  - README.md
+  - .gitignore
+  - .sass-cache
+  - Gemfile.lock
+
+# Sass conversion configs
+sass:
+    sass_dir: assets/css/_sass
+    style: :compressed
