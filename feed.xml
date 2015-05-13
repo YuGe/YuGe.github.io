@@ -5,9 +5,38 @@
     <description>从里寻她，灯火阑珊</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 13 May 2015 23:33:46 +0800</pubDate>
-    <lastBuildDate>Wed, 13 May 2015 23:33:46 +0800</lastBuildDate>
+    <pubDate>Thu, 14 May 2015 00:46:49 +0800</pubDate>
+    <lastBuildDate>Thu, 14 May 2015 00:46:49 +0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Migration from Octopress to Harmony</title>
+        <description>&lt;p&gt;Both &lt;a href=&quot;http://octopress.org/&quot;&gt;Octopress&lt;/a&gt; and &lt;a href=&quot;http://gayan.me/harmony/&quot;&gt;Harmony&lt;/a&gt; are &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; based framework for blogging. I
+used &lt;a href=&quot;http://octopress.org/&quot;&gt;Octopress&lt;/a&gt; for about half a year, and wrote several blogs. Now, I find
+&lt;a href=&quot;http://gayan.me/harmony/&quot;&gt;Harmony&lt;/a&gt; is more graceful and in line with my aesthetic. I spent about half
+a day on the migrating.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;I first forked the repository from &lt;a href=&quot;https://github.com/gayanvirajith&quot;&gt;Gayan Virajith&lt;/a&gt;’s GitHub.
+Then, I made some modification, such as adding Home tab, adding disqus comment,
+and change jquery cdn from google to bootstrap. The migrating of blogs is
+easier. What I needed to do is just modifying the directory of images.&lt;/p&gt;
+
+&lt;p&gt;This blog is a biography of this migration. And, from this blog, I start to
+write something in English to practice my writing. I’ll write as frequently as
+I can. The content of the blog will consist of anythings, whatever happened in
+my life.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 13 May 2015 00:00:00 +0800</pubDate>
+        <link>/migration-from-octopress-to-harmony</link>
+        <guid isPermaLink="true">/migration-from-octopress-to-harmony</guid>
+        
+        
+        <category>post</category>
+        
+      </item>
     
       <item>
         <title>准备参加上海国际马拉松</title>
@@ -210,7 +239,6 @@ Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;octol/vim-cpp-enhanced-highligh
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;wildignore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;*.&lt;span class=&quot;k&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;*&lt;span class=&quot;p&quot;&gt;~,&lt;/span&gt;*pyc              &lt;span class=&quot;c&quot;&gt;&amp;quot; Ignore compiled files&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;wildmenu&lt;/span&gt;                            &lt;span class=&quot;c&quot;&gt;&amp;quot; Completion with menu&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;winaltkeys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;no                       &lt;span class=&quot;c&quot;&gt;&amp;quot; Turn off the Alt key binding to the gui menu&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;writebackup&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;fileformat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;unix                     &lt;span class=&quot;c&quot;&gt;&amp;quot; Default file mode&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;fileformats&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;unix&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;dos&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;mac            &lt;span class=&quot;c&quot;&gt;&amp;quot; Detects file type in order&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;encoding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;utf&lt;span class=&quot;m&quot;&gt;-8&lt;/span&gt;                      &lt;span class=&quot;c&quot;&gt;&amp;quot; Character encoding used inside vim&lt;/span&gt;
