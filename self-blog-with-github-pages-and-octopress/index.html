@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>用GitHub Pages和Octopress创建个人博客</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is YuGe's personal website.">
+        <link rel="canonical"
+        href="/self-blog-with-github-pages-and-octopress">
+
+        <link href="/favicon.png" rel="icon">
+
+        <!-- Harmony styles -->
+        <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+
+        <!-- Modernizr js -->
+        <script async src="/assets/js/modernizr.js"></script>
+
+        <!-- IE Fixes -->
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="theme-base-01">
+        <header class="main-header">
+            <div class="wc-container">
+              <a href="/">
+                  <img src="/assets/images/yuge.png" alt="YuGe's Name Logo"/>
+              </a>
+                <h2>从里寻她，灯火阑珊</h2>
+                <ul>
+	<li>
+		<a href="/">Home</a>
+	</li>
+	<li>
+		<a href="/about">About</a><span>/</span>
+	</li>
+	<li>
+		<a href="/blog">Blog</a><span>/</span>
+	</li>
+</ul>
+
+            </div>
+        </header>
+        <div class="page-content wc-container">
+	
+	<div class="post">
+		<h1>用GitHub Pages和Octopress创建个人博客</h1>
+		<p class="post-meta">
+			
+      <span class="categories">
+      blog
+      </span> |
+	    
+	    <span class="post-date">
+    	Jul 9, 2014 
+	    </span>
+		</p>		
+		<div class="post">
+			<p>不久前了解到可以使用<a href="https://pages.github.com/">Github Pages</a> 来搭建一个免费的不限流量和空间的静态网站，结合Octopress的便可以搭建一个博客系统。花了一些时间学习了使用方法，把具体的过程在这里记录下来，备忘同时可以给其他人作为参考。</p>
+
+<!--more-->
+
+<h2 id="section">简介</h2>
+
+<p>首先简单介绍一下我们使用的工具。</p>
+
+<h4 id="github-">1. Github 简介</h4>
+
+<p><a href="https://github.com/">Github</a>是一个很好的云端代码管理仓库，能够与版本管理软件<a href="http://git-scm.com/">Git</a>完美结合。我们可以通过Git将本地的代码上传到云端，以便更好更方便的与他人合作与交流。 除了普通的代码管理功能之外，Github提供了一个用户可以自定义的项目首页，即<a href="https://pages.github.com/">GitHub Pages</a>。通过GitHub Pages，我们可以编写一个自己的站。</p>
+
+<p>使用Github Pages来编写个人网页，我们只需要将代码上传到Github，Github会生成并托管整个网站。这样便免去了我们自己来管理服务器的麻烦，同时可以使用Git来进行版本控制。</p>
+
+<h4 id="jekyll-">2. Jekyll 简介</h4>
+
+<p><a href="http://jekyllrb.com/">Jekyll</a>是一个静态网页生成器。由于GitHub Pages只支持静态网页，因此，我们需要使用Jekyll将动态网页装换为静态网页。Jekyll支持<a href="http://docs.shopify.com/themes/liquid-documentation/basics">Liquid</a>和<a href="http://daringfireball.net/projects/markdown/">Markdown</a>，我们使用Liquid来写博客的模板，使用Markdown来写博客的内容，再使用Jekyll转换为静态网页，再推送到GitHub。</p>
+
+<h4 id="octopress-">3. Octopress 简介</h4>
+
+<p><a href="http://octopress.org/">Octopress</a>是一个为<a href="http://jekyllrb.com/">Jekyll</a>设计的博客框架。Jekyll需要用户自己编写博客的模板，Octopress则提供了一个良好的模板，免去了用户自己设计的过程。此外，Octopress还提供了一些实用的小工具，方便用户配置博客系统以及编写博客。</p>
+
+<h2 id="section-1">具体实例</h2>
+
+<p>下面是一个具体的实例来说明配置的过程。</p>
+
+<h4 id="section-2">1. 需要的软件</h4>
+
+<p>首先是安装<a href="http://git-scm.com/">Git</a>，我们依赖它与Github通信，同时对代码进行版本管理。</p>
+
+<p>其次是<a href="https://www.ruby-lang.org/en/">Ruby</a>，版本号需要大于等于1.93。</p>
+
+<h4 id="octopress">2. 安装Octopress</h4>
+
+<p>选择一个存放代码的文件目录，将octopree从GitHub克隆下来。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>Codes   <span class="c">#选择Codes这个文件夹来存放代码</span>
+git clone git://github.com/imathis/octopress.git
+<span class="nb">cd </span>octopress   <span class="c">#进入克隆得到的octopress文件夹</span></code></pre></div>
+
+<p>安装bundler，并使用bundler安装一些Octopress需要的软件包。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">gem install bundler
+bundle install</code></pre></div>
+
+<p>然后便可以安装Octopress的默认的主题。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">rake install</code></pre></div>
+
+<p>这一步Octopress会创建一些文件目录，包括<code>source</code>，<code>sass</code>，<code>source/_posts</code>，<code>public</code>。</p>
+
+<h4 id="section-3">3. 创建代码管理仓库</h4>
+
+<p>使用GitHub Pages首先需要用户创建一个特殊的代码管理仓库，即仓库必须命名为<em>username</em>.github.io，其中<em>username</em>是你的GitHub用户名。如下图所示。</p>
+
+<p><img src="/assets/images/BlogGithubPages/CreateRepository.png" alt="CreateRepository" title="Create Repository" /></p>
+
+<p>点击下方<strong>Create repository</strong>即可创建一个仓库，创建成功之后可以得到如下图红框中所示的一个链接。</p>
+
+<p><img src="/assets/images/BlogGithubPages/SSHLink.png" alt="SSHLink" title="SSH Link" /></p>
+
+<p>Github Pages会认识别该仓库下的默认（default）分支，将该分支下的文件上传到服务器，创建一个静态的网页，页面的URL为<code>http://username.github.io</code>。<code>username</code>为用户名，因此上例中的URL便是<code>http://yuge.github.io</code>。</p>
+
+<h4 id="octopress-1">4. 使用Octopress创建站点</h4>
+
+<p>为了使用同样的一个仓库来保存项目的源文件，我们可以创建新一个分支，Octopress提供了一个方便的配置命令。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">rake setup_github_pages</code></pre></div>
+
+<p>该命令会询问你的Github仓库的URL，将上图红框中的链接复制粘贴即可。该命令实际上是一系列命令的批处理，主要完成以下几件事情。</p>
+
+<ol>
+  <li>将imathis/octopress这一仓库的本地简称从’origin’改为’octopress’。</li>
+  <li>添加你的你的Githut Pages仓库，命名为’origin’。</li>
+  <li>将’origin’设为默认的远程仓库。</li>
+  <li>将Master分支改名为<code>source</code>。</li>
+  <li>删除_deploy文件夹，再新建一个_deploy文件夹。</li>
+  <li>在_deploy文件夹里面初始化一个Git仓库，该仓库为master分支。</li>
+</ol>
+
+<p><strong>上一步中，Git与Github的传输协议是SSH，因此可能需要配置Github服务器的ssh keys，<a href="https://help.github.com/articles/generating-ssh-keys">这里</a>有详细的说明。</strong></p>
+
+<p>然后使用Octopress来生成静态网页，并上传的Github仓库。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">rake generate
+rake deploy</code></pre></div>
+
+<p>这一步，Octopress会使用Jekyll来生成静态网页，保存在_deploy文件夹中。然后使用Git将_deploy文件夹中的文件上传到Github的master分支。几分钟之后，Github Pages便会发布的你站点。</p>
+
+<p>当然，我们也可以将source分支中的源文件提交上传的Github。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git add .
+git commit -m <span class="s1">&#39;your message&#39;</span>
+git push origin <span class="nb">source</span></code></pre></div>
+
+<p>对于一个新的仓库，Github会将最先上传的一个分支设为默认分支，并且使用默认分支的文件来构建站点。如果你的默认分支不是master分支，可以到Github页面进行设置。在该分支主页面的右侧有一个<code>settings</code>按钮，点击进去在页面的上方便可以设置。如下图。</p>
+
+<p><img src="/assets/images/BlogGithubPages/Settings.png" alt="Settings" title="Settings" /></p>
+
+<p><img src="/assets/images/BlogGithubPages/SetDefaultBranch.png" alt="Set Default Branch" title="Set Default Branch" /></p>
+
+<p>几分钟以后我们便可以访问自己的站点，浏览器输入<code>username.github.io</code>，便可以访问自己站点了。如下图所示。</p>
+
+<p><img src="/assets/images/BlogGithubPages/InitialSite.png" alt="Initial Site" title="Initial Site" /></p>
+
+<h4 id="section-4">5. 写第一篇博客</h4>
+
+<p>Octopress提供了一个简单地创建一个博客的命令</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">rake new_post<span class="o">[</span><span class="s2">&quot;title&quot;</span><span class="o">]</span></code></pre></div>
+
+<p>其中<code>title</code>是你想创建的博客的名字。如：</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">rake new_post<span class="o">[</span><span class="s2">&quot;First Blog&quot;</span><span class="o">]</span></code></pre></div>
+
+<p>然后输入命令<code>rake preview</code>即可在本地预览页面。在浏览器中输入<code>localhost:4000</code>，即可看到如下图所示界面。</p>
+
+<p><img src="/assets/images/BlogGithubPages/FirstBlog.png" alt="First Blog" title="First Blog" /></p>
+
+<p>该命令实际上是创建了一个Markdown文件，存放在<code>source/_post</code>目录，如<code>2014-07-12-first-blog.markdown</code>。我们修改该文件即可编写自己的博客。如。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">layout: post
+title: <span class="s2">&quot;First blog&quot;</span>
+date: 2014-07-12 13:15:38 +0800
+comments: <span class="nb">true</span>
+categories:
+
+Hello! 这是第一篇博客!</code></pre></div>
+
+<p>这样在预览界面可以看到博客的内容发生了变化。</p>
+
+<p><img src="/assets/images/BlogGithubPages/FirstModification.png" alt="First Modification" title="First Modification" /></p>
+
+<h4 id="github">6. 生成静态页面并推送到Github</h4>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">rake generate
+rake deploy</code></pre></div>
+
+<p>上面两行命令即可方便的生成静态页面并将静态页面推送到Github。之后在<code>username.github.io</code>便可以看到啦。</p>
+
+<p>到这里我们便完成一个博客站点的创建，并且成功地创建了第一篇博客。</p>
+
+<h4 id="section-5">7. 编写一个独立的页面</h4>
+
+<p>Octopress提供了一个创建独立页面的命令，页面文件放在<code>source</code>目录中，URL为<code>username.github.io/pagename</code>，其中<code>pagename</code>是你创建的页面名称。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">rake new_page<span class="o">[</span>super-awesome<span class="o">]</span>
+<span class="c"># creates /source/super-awesome/index.markdown</span>
+
+rake new_page<span class="o">[</span>super-awesome/page.html<span class="o">]</span>
+<span class="c"># creates /source/super-awesome/page.html</span></code></pre></div>
+
+<h2 id="octopress--1">Octopress 文件说明</h2>
+
+<p>这一部分是Octopress的文件说明。</p>
+
+<h4 id="section-6">1. 存放代码的文件夹的根目录</h4>
+
+<p>在存放代码的文件夹的根目录里，<code>_config.yml</code>和<code>Gemfile</code>是两个我们会用到的配置文件。以及<code>source</code>，<code>public</code>，<code>_deploy</code>，<code>sass</code>这几个需要常用的文件夹。</p>
+
+<p><code>-config.yml</code>文件可以对Octopress生成的站点的一些固定信息进行配置，如<code>url</code>，<code>title</code>，<code>subtitle</code>，<code>author</code>等等，这些信息在生成站点的时候会用到。还有包括Markdown解析插件的选择，代码高亮的方式等，都需要在这个文件里进行配置。</p>
+
+<p><code>Gemfile</code>文件里是我们需要的插件的名字，这样我们可以简单地使用<code>bundle install</code>来安装我们需要的插件。</p>
+
+<p><code>source/</code>文件夹里面存放的是生成静态文件的源代码，包括Liquid格式的模板文件，以及Markdown格式的文件。后面会有详细的说明。</p>
+
+<p><code>public/</code>用来存放由<code>source</code>文件夹里面的文件生成的的静态网页，每次运行<code>rake generate</code>，<code>source</code> 文件夹里面的文件都会被删除，再生成一次。</p>
+
+<p><code>_deploy/</code>文件夹里面存放的是<code>origin/master</code>分支的文件，该文件夹里面的文件在使用<code>rake deploy</code>命令时会被清空，再将<code>public/</code>文件夹里面的文件复制过来。然后提交推送到Github。</p>
+
+<p><code>sass/</code>文件夹里面存放的是sass格式的样式文件，用来对模板进行配置。</p>
+
+<h4 id="source">2. source文件夹</h4>
+
+<p><code>source</code>文件夹里面包括<code>_includes</code>，<code>_layouts</code>，<code>_posts</code>，<code>images</code>这些文件夹。</p>
+
+<p><code>_includes</code>文件夹存放的是模板文件。<code>_deploy</code>存放的是页面的模板。<code>_post</code>是用些用markdown写的博客，<code>images</code>存放的图片文件。</p>
+
+
+		</div>
+	</div>
+
+
+	
+	<div class="related">
+		<h4>Related Posts</h2>
+		<ul class="posts">
+		    
+		    <li>
+			  <span>16 Sep 2014 &raquo;</span>
+			  <a href="/Shanghai-marathon-2014">准备参加上海国际马拉松</a>
+		    </li>
+		    
+		    <li>
+			  <span>12 Jul 2014 &raquo;</span>
+			  <a href="/my-vimrc-file">我的vimrc文件</a>
+		    </li>
+		    
+		</ul>
+	</div>
+	
+
+	<div class="post-footer">
+		<div class="column-1">
+			
+				<span><< Older</span>
+			
+		</div>
+		<div class="column-2"><a href="/ ">Home</a></div>
+		<div class="column-3">
+			
+				<a href="/my-vimrc-file">Newer >></a>
+			
+		</div>
+	</div>
+</div>
+ 
+
+        <footer class="main-footer">
+            <div class="wc-container">
+                <div class="column one">
+                    <h6>Few more links</h6>
+<ul class="menu">
+    <li><a href="/about">About</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/faq">FAQ</a></li>
+</ul>
+
+                </div>
+                <div class="column two">
+                    <h6>Follow me</h6>
+
+<ul class="social-media">
+
+
+    
+
+    
+    <li>
+        <a title="yuge on Github" 
+            href="https://github.com/yuge" 
+            class="github wc-img-replace" target="_blank">Github</a>
+    </li>
+     
+
+    
+
+    
+
+    
+
+    
+
+</ul>
+                </div>
+            </div>
+            <p class="wc-container disclaimer">
+                
+
+            </p>
+        </footer>
+        <!-- jQuery -->
+        <script src="//cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+        <!-- When no internet load JQuery from local -->
+        <script>window.jQuery || document.write('<script src="/assets/js/jquery.min.js"><\/script>')</script>
+        <!-- Site js -->
+        <script src="/assets/js/all.js"></script>
+        <!-- Google analytics  -->
+        
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-62923339-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+    </body>
+</html>
