@@ -89,7 +89,7 @@ Install</code>便可以安装所有的插件。</p>
 Plugin <span class="s1">&#39;gmarik/Vundle.vim&#39;</span>
 
 <span class="c">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span>
-<span class="c">&quot;                          Vundle configuration</span>
+<span class="c">&quot;                                 Pulgins</span>
 <span class="c">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span>
 Plugin <span class="s1">&#39;altercation/vim-colors-solarized&#39;</span>
 Plugin <span class="s1">&#39;Valloric/YouCompleteMe&#39;</span>
@@ -104,17 +104,19 @@ Plugin <span class="s1">&#39;Valloric/ListToggle&#39;</span>
 Plugin <span class="s1">&#39;Valloric/MatchTagAlways&#39;</span>
 Plugin <span class="s1">&#39;sjl/gundo.vim&#39;</span>
 Plugin <span class="s1">&#39;majutsushi/tagbar&#39;</span>
-Plugin <span class="s1">&#39;Valloric/vim-indent-guides&#39;</span>
+Plugin <span class="s1">&#39;Yggdroot/indentLine&#39;</span>
 Plugin <span class="s1">&#39;vim-scripts/matchit.zip&#39;</span>
 Plugin <span class="s1">&#39;Raimondi/delimitMate&#39;</span>
 Plugin <span class="s1">&#39;terryma/vim-multiple-cursors&#39;</span>
 Plugin <span class="s1">&#39;kien/ctrlp.vim&#39;</span>
+Plugin <span class="s1">&#39;rizzatti/dash.vim&#39;</span>
 Plugin <span class="s1">&#39;yegappan/mru&#39;</span>
 Plugin <span class="s1">&#39;YankRing.vim&#39;</span>
 Plugin <span class="s1">&#39;bufexplorer.zip&#39;</span>
 Plugin <span class="s1">&#39;scrooloose/nerdtree&#39;</span>
 Plugin <span class="s1">&#39;godlygeek/tabular&#39;</span>
 Plugin <span class="s1">&#39;LaTeX-Box-Team/LaTeX-Box&#39;</span>
+Plugin <span class="s1">&#39;jelera/vim-javascript-syntax&#39;</span>
 Plugin <span class="s1">&#39;suan/vim-instant-markdown&#39;</span>
 Plugin <span class="s1">&#39;tpope/vim-liquid&#39;</span>
 Plugin <span class="s1">&#39;groenewege/vim-less&#39;</span>
@@ -122,6 +124,7 @@ Plugin <span class="s1">&#39;hail2u/vim-css3-syntax&#39;</span>
 Plugin <span class="s1">&#39;helino/vim-json&#39;</span>
 Plugin <span class="s1">&#39;othree/html5.vim&#39;</span>
 Plugin <span class="s1">&#39;octol/vim-cpp-enhanced-highlight&#39;</span>
+Plugin <span class="s1">&#39;hynek/vim-python-pep8-indent&#39;</span>
 
 <span class="k">call</span> vundle#<span class="k">end</span><span class="p">()</span>
 
@@ -137,8 +140,9 @@ Plugin <span class="s1">&#39;octol/vim-cpp-enhanced-highlight&#39;</span>
 <span class="c">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span>
 
 <span class="nb">syntax</span> enable                           <span class="c">&quot; Enable syntax highlighting</span>
-<span class="k">let</span> <span class="k">g</span>:solarized_termcolors<span class="p">=</span><span class="m">256</span>
+<span class="k">let</span> <span class="k">g</span>:solarized_termcolors<span class="p">=</span><span class="m">256</span>          <span class="c">&quot; set solarized for term vim</span>
 <span class="k">colorscheme</span> solarized
+
 <span class="k">set</span> <span class="nb">autoindent</span>
 <span class="k">set</span> <span class="nb">autoread</span>                            <span class="c">&quot; Auto read when file changed outside</span>
 <span class="k">set</span> <span class="nb">autowrite</span>                           <span class="c">&quot; Auto write</span>
@@ -155,18 +159,17 @@ Plugin <span class="s1">&#39;octol/vim-cpp-enhanced-highlight&#39;</span>
 <span class="k">set</span> <span class="nb">hlsearch</span>                            <span class="c">&quot; Highlight search results</span>
 <span class="k">set</span> <span class="nb">ignorecase</span>                          <span class="c">&quot; Ignore case when searching</span>
 <span class="k">set</span> <span class="nb">incsearch</span>                           <span class="c">&quot; Show result while type</span>
-<span class="k">set</span> <span class="nb">iskeyword</span><span class="p">+=</span>_<span class="p">,</span>$<span class="p">,</span>@<span class="p">,</span>%<span class="p">,</span>#
 <span class="k">set</span> <span class="nb">laststatus</span><span class="p">=</span><span class="m">2</span>
 <span class="k">set</span> <span class="nb">lazyredraw</span>                          <span class="c">&quot; Don&#39;t redraw while executing macros</span>
 <span class="k">set</span> <span class="nb">lbr</span>                                 <span class="c">&quot; Line break</span>
 <span class="k">set</span> <span class="nb">lines</span><span class="p">=</span><span class="m">34</span>                            <span class="c">&quot; Set the window size</span>
 <span class="k">set</span> <span class="nb">magic</span>                               <span class="c">&quot; For regular expressions turn magic on</span>
 <span class="k">set</span> <span class="k">mat</span><span class="p">=</span><span class="m">1</span>                               <span class="c">&quot; How many tenths of seconds to blink</span>
-<span class="k">set</span> <span class="nb">matchpairs</span><span class="p">+=&lt;</span>:<span class="p">&gt;</span>
 <span class="k">set</span> <span class="nb">mouse</span><span class="p">=</span><span class="k">a</span>                             <span class="c">&quot; Enable mouse</span>
 <span class="k">set</span> <span class="nb">noswapfile</span>
+<span class="k">set</span> <span class="nb">paste</span>
 <span class="k">set</span> <span class="nb">relativenumber</span>                      <span class="c">&quot; lelative number</span>
-<span class="k">set</span> <span class="nb">sidescrolloff</span><span class="p">=</span><span class="m">5</span>
+<span class="k">set</span> <span class="nb">sidescrolloff</span><span class="p">=</span><span class="m">6</span>                     <span class="c">&quot; left column while scroll horizontal</span>
 <span class="k">set</span> <span class="nb">scrolloff</span><span class="p">=</span><span class="m">6</span>                         <span class="c">&quot; 6 lines above/below cursor when scroll</span>
 <span class="k">set</span> <span class="nb">shiftwidth</span><span class="p">=</span><span class="m">4</span>
 <span class="k">set</span> <span class="nb">softtabstop</span><span class="p">=</span><span class="m">4</span>
@@ -179,13 +182,14 @@ Plugin <span class="s1">&#39;octol/vim-cpp-enhanced-highlight&#39;</span>
 <span class="k">set</span> <span class="nb">tabstop</span><span class="p">=</span><span class="m">8</span>                           <span class="c">&quot; Number of spaces of a &lt;Tab&gt;</span>
 <span class="k">set</span> <span class="nb">title</span>                               <span class="c">&quot; Show file in title bar</span>
 <span class="k">set</span> <span class="nb">textwidth</span><span class="p">=</span><span class="m">79</span>                        <span class="c">&quot; Set the length of a line</span>
+<span class="k">set</span> <span class="nb">undodir</span><span class="p">=</span>$HOME<span class="sr">/.vim/</span>undo
 <span class="k">set</span> <span class="nb">undofile</span>                            <span class="c">&quot; Turn persistent undo on</span>
 <span class="k">set</span> <span class="nb">undolevels</span><span class="p">=</span><span class="m">800</span>
 <span class="k">set</span> <span class="nb">undoreload</span><span class="p">=</span><span class="m">800</span>
 <span class="k">set</span> <span class="nb">viminfo</span>^<span class="p">=</span>%                          <span class="c">&quot; Remember info about open buffers</span>
 <span class="k">set</span> <span class="nb">wildignore</span><span class="p">=</span>*.<span class="k">o</span><span class="p">,</span>*<span class="p">~,</span>*pyc              <span class="c">&quot; Ignore compiled files</span>
 <span class="k">set</span> <span class="nb">wildmenu</span>                            <span class="c">&quot; Completion with menu</span>
-<span class="k">set</span> <span class="nb">winaltkeys</span><span class="p">=</span>no                       <span class="c">&quot; Turn off the Alt key binding to the gui menu</span>
+<span class="k">set</span> <span class="nb">winaltkeys</span><span class="p">=</span>no                       <span class="c">&quot; Turn off the gui Alt key binding</span>
 <span class="k">set</span> <span class="nb">fileformat</span><span class="p">=</span>unix                     <span class="c">&quot; Default file mode</span>
 <span class="k">set</span> <span class="nb">fileformats</span><span class="p">=</span>unix<span class="p">,</span>dos<span class="p">,</span>mac            <span class="c">&quot; Detects file type in order</span>
 <span class="k">set</span> <span class="nb">encoding</span><span class="p">=</span>utf<span class="m">-8</span>                      <span class="c">&quot; Character encoding used inside vim</span>
@@ -206,25 +210,10 @@ Plugin <span class="s1">&#39;octol/vim-cpp-enhanced-highlight&#39;</span>
 <span class="k">set</span> <span class="nb">statusline</span> <span class="p">+=</span>Statement#\ %<span class="k">v</span>%#               <span class="c">&quot;virtual column number</span>
 <span class="k">set</span> <span class="nb">statusline</span> <span class="p">+=</span>Directory#\ %<span class="k">p</span>%%\ %#           <span class="c">&quot;percentage of the file</span>
 
-<span class="c">&quot; No warnings</span>
-<span class="k">set</span> <span class="nb">noerrorbells</span> <span class="nb">visualbell</span> <span class="nb">t_vb</span><span class="p">=</span>
-<span class="k">autocmd</span> <span class="nb">GUIEnter</span> * <span class="k">set</span> <span class="nb">visualbell</span> <span class="nb">t_vb</span><span class="p">=</span>
-
 <span class="c">&quot; Special file type</span>
 <span class="c">&quot; auto filetype html set filetype=htmldjango</span>
-<span class="k">auto</span> <span class="k">filetype</span> html<span class="p">,</span>htmldjango<span class="p">,</span>css<span class="p">,</span>less <span class="k">set</span> <span class="nb">shiftwidth</span><span class="p">=</span><span class="m">2</span>
-<span class="k">auto</span> <span class="k">filetype</span> html<span class="p">,</span>htmldjango <span class="k">set</span> <span class="nb">colorcolumn</span><span class="p">=</span><span class="s2">&quot;&quot;</span>
-<span class="k">auto</span> <span class="k">filetype</span> html<span class="p">,</span>htmldjango <span class="k">set</span> <span class="nb">textwidth</span><span class="p">=</span><span class="m">0</span>
-<span class="k">auto</span> <span class="k">filetype</span> cpp <span class="k">set</span> <span class="nb">matchpairs</span><span class="p">=(</span>:<span class="p">),</span>{:}<span class="p">,</span>[:]
-
 <span class="k">auto</span> <span class="nb">BufNewFile</span><span class="p">,</span><span class="nb">BufReadPost</span> *.md <span class="k">set</span> <span class="k">filetype</span><span class="p">=</span>markdown
 <span class="k">let</span> <span class="k">g</span>:tex_flavor<span class="p">=</span><span class="s1">&#39;latex&#39;</span>
-
-<span class="c">&quot; Special makeprg according to filetype</span>
-<span class="k">set</span> <span class="nb">makeef</span><span class="p">=</span>##
-<span class="k">auto</span> <span class="k">filetype</span> <span class="k">c</span> <span class="k">set</span> <span class="nb">makeprg</span><span class="p">=</span>clang\ <span class="p">-</span><span class="k">o</span>\ %<span class="p">&lt;</span>\ %
-<span class="k">auto</span> <span class="k">filetype</span> cpp <span class="k">set</span> <span class="nb">makeprg</span><span class="p">=</span>clang<span class="p">++</span>\ <span class="p">-</span>std<span class="p">=</span><span class="k">c</span><span class="p">++</span><span class="m">11</span>\ <span class="p">-</span>stdlib<span class="p">=</span>libc<span class="p">++</span>\ <span class="p">-</span><span class="k">o</span>\ %<span class="p">&lt;</span>\ %
-<span class="k">auto</span> <span class="k">filetype</span> tex <span class="k">set</span> <span class="nb">makeprg</span><span class="p">=</span>xelatex\ %
 
 <span class="c">&quot; Set extra options when runing in GUI mode</span>
 <span class="k">if</span> has<span class="p">(</span><span class="s2">&quot;gui_running&quot;</span><span class="p">)</span>
@@ -237,8 +226,6 @@ Plugin <span class="s1">&#39;octol/vim-cpp-enhanced-highlight&#39;</span>
 <span class="c">&quot; Set font according to system</span>
 <span class="k">if</span> has<span class="p">(</span><span class="s2">&quot;mac&quot;</span><span class="p">)</span>
     <span class="k">set</span> <span class="nb">guifont</span><span class="p">=</span>Source\ code\ <span class="k">pro</span>:h12
-<span class="k">elseif</span> has<span class="p">(</span><span class="s2">&quot;gui_gtk&quot;</span><span class="p">)</span>
-    <span class="k">set</span> <span class="nb">guifont</span><span class="p">=</span>Consolas\ <span class="m">12</span>
 <span class="k">end</span>
 
 <span class="c">&quot; Automatically source when saving</span>
@@ -354,14 +341,24 @@ endfunc
 <span class="k">let</span> <span class="k">g</span>:ctrlp_working_path_mode<span class="p">=</span><span class="m">0</span>
 <span class="k">let</span> <span class="k">g</span>:ctrlp_max_height<span class="p">=</span><span class="m">15</span>
 
+<span class="c">&quot; Dash</span>
+nmap <span class="p">&lt;</span><span class="k">silent</span><span class="p">&gt;</span> <span class="p">&lt;</span>leader<span class="p">&gt;</span>dd <span class="p">&lt;</span>Plug<span class="p">&gt;</span>DashSearch
+
 <span class="c">&quot; DelimitMate</span>
 <span class="k">let</span> delimitMate_nesting_quotes <span class="p">=</span> [<span class="s1">&#39;&quot;&#39;</span><span class="p">,</span> <span class="s1">&#39;`&#39;</span>]
 <span class="k">let</span> delimitMate_expand_cr <span class="p">=</span> <span class="m">1</span>
 <span class="k">let</span> delimitMate_expand_space <span class="p">=</span> <span class="m">1</span>
 
 <span class="c">&quot; Gundo</span>
-<span class="nb">nnoremap</span> <span class="p">&lt;</span>F4<span class="p">&gt;</span> :GundoToggle<span class="p">&lt;</span><span class="k">cr</span><span class="p">&gt;</span>
-<span class="k">let</span> <span class="k">g</span>:gundo_width<span class="p">=</span><span class="m">40</span>
+<span class="nb">nnoremap</span> <span class="p">&lt;</span>F8<span class="p">&gt;</span> :GundoToggle<span class="p">&lt;</span><span class="k">cr</span><span class="p">&gt;</span>
+<span class="k">let</span> <span class="k">g</span>:gundo_width<span class="p">=</span><span class="m">30</span>
+
+<span class="c">&quot; IndentGuide</span>
+<span class="k">let</span> <span class="k">g</span>:indentLine_enabled <span class="p">=</span> <span class="m">0</span>
+<span class="k">let</span> indentLine_char <span class="p">=</span> <span class="s1">&#39;│&#39;</span>
+nmap <span class="p">&lt;</span><span class="k">silent</span><span class="p">&gt;</span> <span class="p">&lt;</span>Leader<span class="p">&gt;</span>ii :IndentLinesToggle<span class="p">&lt;</span><span class="k">cr</span><span class="p">&gt;</span>
+nmap <span class="p">&lt;</span><span class="k">silent</span><span class="p">&gt;</span> <span class="p">&lt;</span>Leader<span class="p">&gt;</span>ie :IndentLinesEnable<span class="p">&lt;</span><span class="k">cr</span><span class="p">&gt;</span>
+nmap <span class="p">&lt;</span><span class="k">silent</span><span class="p">&gt;</span> <span class="p">&lt;</span>Leader<span class="p">&gt;</span>id :IndentLinesDisable<span class="p">&lt;</span><span class="k">cr</span><span class="p">&gt;</span>
 
 <span class="c">&quot; Instant_markdown</span>
 <span class="k">let</span> <span class="k">g</span>:instant_markdown_slow <span class="p">=</span> <span class="m">1</span>
@@ -385,12 +382,15 @@ map <span class="p">&lt;</span>leader<span class="p">&gt;</span>nn :NERDTreeTogg
 <span class="c">&quot; Syntastic</span>
 <span class="k">let</span> <span class="k">g</span>:syntastic_always_populate_loc_list <span class="p">=</span> <span class="m">1</span>
 <span class="k">let</span> <span class="k">g</span>:syntastic_check_on_wq <span class="p">=</span> <span class="m">0</span>
-<span class="k">let</span> <span class="k">g</span>:syntastic_cpp_check_header <span class="p">=</span> <span class="m">1</span>
+<span class="k">let</span> <span class="k">g</span>:syntastic_javascript_checkers <span class="p">=</span> [<span class="s1">&#39;jshint&#39;</span>]
 <span class="k">let</span> <span class="k">g</span>:syntastic_python_checkers<span class="p">=</span>[<span class="s1">&#39;flake8&#39;</span>]
+<span class="k">let</span> <span class="k">g</span>:syntastic_html_tidy_exec <span class="p">=</span> <span class="s1">&#39;tidy5&#39;</span>
+<span class="k">let</span> <span class="k">g</span>:syntastic_python_python_exec <span class="p">=</span> <span class="s1">&#39;/usr/local/bin/python3&#39;</span>
+<span class="c">&quot; let g:syntastic_python_python_exec = &#39;/usr/bin/python&#39;</span>
 <span class="k">let</span> <span class="k">g</span>:syntastic_cpp_compiler <span class="p">=</span> <span class="s1">&#39;clang++&#39;</span>
 <span class="k">let</span> <span class="k">g</span>:syntastic_cpp_compiler_options <span class="p">=</span> <span class="s1">&#39; -std=c++11 -stdlib=libc++&#39;</span>
 <span class="k">let</span> <span class="k">g</span>:syntastic_mode_map <span class="p">=</span> { <span class="s1">&#39;mode&#39;</span>: <span class="s1">&#39;passive&#39;</span><span class="p">,</span>
-            \ <span class="s1">&#39;active_filetypes&#39;</span>: [<span class="s1">&#39;python&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;cpp&#39;</span>]<span class="p">,</span>
+            \ <span class="s1">&#39;active_filetypes&#39;</span>: [<span class="s1">&#39;python&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;cpp&#39;</span><span class="p">,</span> <span class="s1">&#39;javascript&#39;</span><span class="p">,</span><span class="s1">&#39;html&#39;</span>]<span class="p">,</span>
             \ <span class="s1">&#39;passive_filetypes&#39;</span>: [] }
 
 <span class="c">&quot; Tagbar</span>
@@ -408,7 +408,6 @@ map <span class="p">&lt;</span>leader<span class="p">&gt;</span>tt :TagbarToggle
 <span class="k">let</span> <span class="k">g</span>:UltiSnipsEditSplit <span class="p">=</span> <span class="s2">&quot;horizontal&quot;</span>
 
 <span class="c">&quot; Yankring</span>
-<span class="c">&quot; this is so that single char deletes don&#39;t end up in the yankring</span>
 <span class="k">let</span> <span class="k">g</span>:yankring_min_element_length <span class="p">=</span> <span class="m">2</span>
 <span class="k">let</span> <span class="k">g</span>:yankring_window_height <span class="p">=</span> <span class="m">10</span>
 <span class="k">let</span> <span class="k">g</span>:yankring_history_dir <span class="p">=</span> $HOME . <span class="s1">&#39;/.vim/tmp/&#39;</span>
@@ -416,12 +415,12 @@ map <span class="p">&lt;</span>leader<span class="p">&gt;</span><span class="k">
 
 <span class="c">&quot; YouCompleteMe</span>
 <span class="k">let</span> <span class="k">g</span>:ycm_confirm_extra_conf <span class="p">=</span> <span class="m">0</span>
-<span class="k">let</span> <span class="k">g</span>:ycm_key_invoke_completion <span class="p">=</span> <span class="s1">&#39;&lt;S-Space&gt;&#39;</span>
 <span class="k">let</span> <span class="k">g</span>:ycm_add_preview_to_completeopt <span class="p">=</span> <span class="m">1</span>
 <span class="k">let</span> <span class="k">g</span>:ycm_autoclose_preview_window_after_completion <span class="p">=</span> <span class="m">1</span>
 <span class="k">let</span> <span class="k">g</span>:ycm_complete_in_comments <span class="p">=</span> <span class="m">1</span>
 <span class="k">let</span> <span class="k">g</span>:ycm_always_populate_location_list <span class="p">=</span> <span class="m">1</span>
 <span class="k">let</span> <span class="k">g</span>:ycm_collect_identifiers_from_comments_and_strings <span class="p">=</span> <span class="m">1</span>
+<span class="k">let</span> <span class="k">g</span>:ycm_key_invoke_completion <span class="p">=</span> <span class="s1">&#39;&lt;S-Space&gt;&#39;</span>
 <span class="k">let</span> <span class="k">g</span>:ycm_key_list_select_completion <span class="p">=</span> [<span class="s1">&#39;&lt;C-N&gt;&#39;</span>]
 <span class="k">let</span> <span class="k">g</span>:ycm_key_list_previous_completion <span class="p">=</span> [<span class="s1">&#39;&lt;C-P&gt;&#39;</span>]
 <span class="nb">nnoremap</span> <span class="p">&lt;</span>leader<span class="p">&gt;</span>gl :YcmCompleter GoToDeclaration<span class="p">&lt;</span>CR<span class="p">&gt;</span>

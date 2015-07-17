@@ -5,8 +5,8 @@
     <description>从里寻她，灯火阑珊</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 14 May 2015 00:46:49 +0800</pubDate>
-    <lastBuildDate>Thu, 14 May 2015 00:46:49 +0800</lastBuildDate>
+    <pubDate>Fri, 17 Jul 2015 15:24:56 +0800</pubDate>
+    <lastBuildDate>Fri, 17 Jul 2015 15:24:56 +0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -142,7 +142,7 @@ Install&lt;/code&gt;便可以安装所有的插件。&lt;/p&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;gmarik/Vundle.vim&amp;#39;&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;&amp;quot;                          Vundle configuration&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;quot;                                 Pulgins&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;altercation/vim-colors-solarized&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;Valloric/YouCompleteMe&amp;#39;&lt;/span&gt;
@@ -157,17 +157,19 @@ Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;Valloric/ListToggle&amp;#39;&lt
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;Valloric/MatchTagAlways&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;sjl/gundo.vim&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;majutsushi/tagbar&amp;#39;&lt;/span&gt;
-Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;Valloric/vim-indent-guides&amp;#39;&lt;/span&gt;
+Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;Yggdroot/indentLine&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;vim-scripts/matchit.zip&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;Raimondi/delimitMate&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;terryma/vim-multiple-cursors&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;kien/ctrlp.vim&amp;#39;&lt;/span&gt;
+Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;rizzatti/dash.vim&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;yegappan/mru&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;YankRing.vim&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;bufexplorer.zip&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;scrooloose/nerdtree&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;godlygeek/tabular&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;LaTeX-Box-Team/LaTeX-Box&amp;#39;&lt;/span&gt;
+Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;jelera/vim-javascript-syntax&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;suan/vim-instant-markdown&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;tpope/vim-liquid&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;groenewege/vim-less&amp;#39;&lt;/span&gt;
@@ -175,6 +177,7 @@ Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;hail2u/vim-css3-syntax&amp;#39;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;helino/vim-json&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;othree/html5.vim&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;octol/vim-cpp-enhanced-highlight&amp;#39;&lt;/span&gt;
+Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;hynek/vim-python-pep8-indent&amp;#39;&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;call&lt;/span&gt; vundle#&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 
@@ -190,8 +193,9 @@ Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;octol/vim-cpp-enhanced-highligh
 &lt;span class=&quot;c&quot;&gt;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
 
 &lt;span class=&quot;nb&quot;&gt;syntax&lt;/span&gt; enable                           &lt;span class=&quot;c&quot;&gt;&amp;quot; Enable syntax highlighting&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:solarized_termcolors&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;256&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:solarized_termcolors&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;256&lt;/span&gt;          &lt;span class=&quot;c&quot;&gt;&amp;quot; set solarized for term vim&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;colorscheme&lt;/span&gt; solarized
+
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;autoindent&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;autoread&lt;/span&gt;                            &lt;span class=&quot;c&quot;&gt;&amp;quot; Auto read when file changed outside&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;autowrite&lt;/span&gt;                           &lt;span class=&quot;c&quot;&gt;&amp;quot; Auto write&lt;/span&gt;
@@ -208,18 +212,17 @@ Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;octol/vim-cpp-enhanced-highligh
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;hlsearch&lt;/span&gt;                            &lt;span class=&quot;c&quot;&gt;&amp;quot; Highlight search results&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;ignorecase&lt;/span&gt;                          &lt;span class=&quot;c&quot;&gt;&amp;quot; Ignore case when searching&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;incsearch&lt;/span&gt;                           &lt;span class=&quot;c&quot;&gt;&amp;quot; Show result while type&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;iskeyword&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt;_&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;$&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;@&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;%&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;#
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;laststatus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;lazyredraw&lt;/span&gt;                          &lt;span class=&quot;c&quot;&gt;&amp;quot; Don&amp;#39;t redraw while executing macros&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;lbr&lt;/span&gt;                                 &lt;span class=&quot;c&quot;&gt;&amp;quot; Line break&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;34&lt;/span&gt;                            &lt;span class=&quot;c&quot;&gt;&amp;quot; Set the window size&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;magic&lt;/span&gt;                               &lt;span class=&quot;c&quot;&gt;&amp;quot; For regular expressions turn magic on&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;mat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;                               &lt;span class=&quot;c&quot;&gt;&amp;quot; How many tenths of seconds to blink&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;matchpairs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;+=&amp;lt;&lt;/span&gt;:&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;mouse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;a&lt;/span&gt;                             &lt;span class=&quot;c&quot;&gt;&amp;quot; Enable mouse&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;noswapfile&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;paste&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;relativenumber&lt;/span&gt;                      &lt;span class=&quot;c&quot;&gt;&amp;quot; lelative number&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sidescrolloff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sidescrolloff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;                     &lt;span class=&quot;c&quot;&gt;&amp;quot; left column while scroll horizontal&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;scrolloff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;                         &lt;span class=&quot;c&quot;&gt;&amp;quot; 6 lines above/below cursor when scroll&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;shiftwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;softtabstop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;
@@ -232,13 +235,14 @@ Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;octol/vim-cpp-enhanced-highligh
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;tabstop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;8&lt;/span&gt;                           &lt;span class=&quot;c&quot;&gt;&amp;quot; Number of spaces of a &amp;lt;Tab&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;title&lt;/span&gt;                               &lt;span class=&quot;c&quot;&gt;&amp;quot; Show file in title bar&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;textwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;79&lt;/span&gt;                        &lt;span class=&quot;c&quot;&gt;&amp;quot; Set the length of a line&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;undodir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;$HOME&lt;span class=&quot;sr&quot;&gt;/.vim/&lt;/span&gt;undo
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;undofile&lt;/span&gt;                            &lt;span class=&quot;c&quot;&gt;&amp;quot; Turn persistent undo on&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;undolevels&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;800&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;undoreload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;800&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;viminfo&lt;/span&gt;^&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;%                          &lt;span class=&quot;c&quot;&gt;&amp;quot; Remember info about open buffers&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;wildignore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;*.&lt;span class=&quot;k&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;*&lt;span class=&quot;p&quot;&gt;~,&lt;/span&gt;*pyc              &lt;span class=&quot;c&quot;&gt;&amp;quot; Ignore compiled files&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;wildmenu&lt;/span&gt;                            &lt;span class=&quot;c&quot;&gt;&amp;quot; Completion with menu&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;winaltkeys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;no                       &lt;span class=&quot;c&quot;&gt;&amp;quot; Turn off the Alt key binding to the gui menu&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;winaltkeys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;no                       &lt;span class=&quot;c&quot;&gt;&amp;quot; Turn off the gui Alt key binding&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;fileformat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;unix                     &lt;span class=&quot;c&quot;&gt;&amp;quot; Default file mode&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;fileformats&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;unix&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;dos&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;mac            &lt;span class=&quot;c&quot;&gt;&amp;quot; Detects file type in order&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;encoding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;utf&lt;span class=&quot;m&quot;&gt;-8&lt;/span&gt;                      &lt;span class=&quot;c&quot;&gt;&amp;quot; Character encoding used inside vim&lt;/span&gt;
@@ -259,25 +263,10 @@ Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;octol/vim-cpp-enhanced-highligh
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;statusline&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt;Statement#\ %&lt;span class=&quot;k&quot;&gt;v&lt;/span&gt;%#               &lt;span class=&quot;c&quot;&gt;&amp;quot;virtual column number&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;statusline&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt;Directory#\ %&lt;span class=&quot;k&quot;&gt;p&lt;/span&gt;%%\ %#           &lt;span class=&quot;c&quot;&gt;&amp;quot;percentage of the file&lt;/span&gt;
 
-&lt;span class=&quot;c&quot;&gt;&amp;quot; No warnings&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;noerrorbells&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;visualbell&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;t_vb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;autocmd&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;GUIEnter&lt;/span&gt; * &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;visualbell&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;t_vb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-
 &lt;span class=&quot;c&quot;&gt;&amp;quot; Special file type&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;&amp;quot; auto filetype html set filetype=htmldjango&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;auto&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;filetype&lt;/span&gt; html&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;htmldjango&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;css&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;less &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;shiftwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;auto&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;filetype&lt;/span&gt; html&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;htmldjango &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;colorcolumn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;auto&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;filetype&lt;/span&gt; html&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;htmldjango &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;textwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;auto&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;filetype&lt;/span&gt; cpp &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;matchpairs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=(&lt;/span&gt;:&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;{:}&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;[:]
-
 &lt;span class=&quot;k&quot;&gt;auto&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;BufNewFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;BufReadPost&lt;/span&gt; *.md &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;filetype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;markdown
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:tex_flavor&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;latex&amp;#39;&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;&amp;quot; Special makeprg according to filetype&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;makeef&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;##
-&lt;span class=&quot;k&quot;&gt;auto&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;filetype&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;makeprg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;clang\ &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;o&lt;/span&gt;\ %&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;\ %
-&lt;span class=&quot;k&quot;&gt;auto&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;filetype&lt;/span&gt; cpp &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;makeprg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;clang&lt;span class=&quot;p&quot;&gt;++&lt;/span&gt;\ &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;std&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;11&lt;/span&gt;\ &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;stdlib&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;libc&lt;span class=&quot;p&quot;&gt;++&lt;/span&gt;\ &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;o&lt;/span&gt;\ %&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;\ %
-&lt;span class=&quot;k&quot;&gt;auto&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;filetype&lt;/span&gt; tex &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;makeprg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;xelatex\ %
 
 &lt;span class=&quot;c&quot;&gt;&amp;quot; Set extra options when runing in GUI mode&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; has&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;gui_running&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -290,8 +279,6 @@ Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;octol/vim-cpp-enhanced-highligh
 &lt;span class=&quot;c&quot;&gt;&amp;quot; Set font according to system&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; has&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;mac&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;guifont&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;Source\ code\ &lt;span class=&quot;k&quot;&gt;pro&lt;/span&gt;:h12
-&lt;span class=&quot;k&quot;&gt;elseif&lt;/span&gt; has&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;gui_gtk&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;guifont&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;Consolas\ &lt;span class=&quot;m&quot;&gt;12&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;&amp;quot; Automatically source when saving&lt;/span&gt;
@@ -407,14 +394,24 @@ endfunc
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:ctrlp_working_path_mode&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:ctrlp_max_height&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;15&lt;/span&gt;
 
+&lt;span class=&quot;c&quot;&gt;&amp;quot; Dash&lt;/span&gt;
+nmap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;silent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;leader&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;dd &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;Plug&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;DashSearch
+
 &lt;span class=&quot;c&quot;&gt;&amp;quot; DelimitMate&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; delimitMate_nesting_quotes &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; [&lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;quot;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;`&amp;#39;&lt;/span&gt;]
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; delimitMate_expand_cr &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; delimitMate_expand_space &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;&amp;quot; Gundo&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;nnoremap&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;F4&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; :GundoToggle&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;cr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:gundo_width&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;40&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;nnoremap&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;F8&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; :GundoToggle&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;cr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:gundo_width&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;quot; IndentGuide&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:indentLine_enabled &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; indentLine_char &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;│&amp;#39;&lt;/span&gt;
+nmap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;silent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;Leader&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;ii :IndentLinesToggle&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;cr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+nmap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;silent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;Leader&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;ie :IndentLinesEnable&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;cr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+nmap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;silent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;Leader&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;id :IndentLinesDisable&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;cr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;&amp;quot; Instant_markdown&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:instant_markdown_slow &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
@@ -438,12 +435,15 @@ map &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;leader&lt;span class=&q
 &lt;span class=&quot;c&quot;&gt;&amp;quot; Syntastic&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:syntastic_always_populate_loc_list &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:syntastic_check_on_wq &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:syntastic_cpp_check_header &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:syntastic_javascript_checkers &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; [&lt;span class=&quot;s1&quot;&gt;&amp;#39;jshint&amp;#39;&lt;/span&gt;]
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:syntastic_python_checkers&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;[&lt;span class=&quot;s1&quot;&gt;&amp;#39;flake8&amp;#39;&lt;/span&gt;]
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:syntastic_html_tidy_exec &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;tidy5&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:syntastic_python_python_exec &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;/usr/local/bin/python3&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;quot; let g:syntastic_python_python_exec = &amp;#39;/usr/bin/python&amp;#39;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:syntastic_cpp_compiler &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;clang++&amp;#39;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:syntastic_cpp_compiler_options &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39; -std=c++11 -stdlib=libc++&amp;#39;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:syntastic_mode_map &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; { &lt;span class=&quot;s1&quot;&gt;&amp;#39;mode&amp;#39;&lt;/span&gt;: &lt;span class=&quot;s1&quot;&gt;&amp;#39;passive&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-            \ &lt;span class=&quot;s1&quot;&gt;&amp;#39;active_filetypes&amp;#39;&lt;/span&gt;: [&lt;span class=&quot;s1&quot;&gt;&amp;#39;python&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;c&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;cpp&amp;#39;&lt;/span&gt;]&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            \ &lt;span class=&quot;s1&quot;&gt;&amp;#39;active_filetypes&amp;#39;&lt;/span&gt;: [&lt;span class=&quot;s1&quot;&gt;&amp;#39;python&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;c&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;cpp&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;javascript&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;html&amp;#39;&lt;/span&gt;]&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
             \ &lt;span class=&quot;s1&quot;&gt;&amp;#39;passive_filetypes&amp;#39;&lt;/span&gt;: [] }
 
 &lt;span class=&quot;c&quot;&gt;&amp;quot; Tagbar&lt;/span&gt;
@@ -461,7 +461,6 @@ map &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;leader&lt;span class=&q
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:UltiSnipsEditSplit &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;horizontal&amp;quot;&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;&amp;quot; Yankring&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;&amp;quot; this is so that single char deletes don&amp;#39;t end up in the yankring&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:yankring_min_element_length &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:yankring_window_height &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:yankring_history_dir &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; $HOME . &lt;span class=&quot;s1&quot;&gt;&amp;#39;/.vim/tmp/&amp;#39;&lt;/span&gt;
@@ -469,12 +468,12 @@ map &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;leader&lt;span class=&q
 
 &lt;span class=&quot;c&quot;&gt;&amp;quot; YouCompleteMe&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:ycm_confirm_extra_conf &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:ycm_key_invoke_completion &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;S-Space&amp;gt;&amp;#39;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:ycm_add_preview_to_completeopt &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:ycm_autoclose_preview_window_after_completion &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:ycm_complete_in_comments &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:ycm_always_populate_location_list &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:ycm_collect_identifiers_from_comments_and_strings &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:ycm_key_invoke_completion &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;S-Space&amp;gt;&amp;#39;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:ycm_key_list_select_completion &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; [&lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;C-N&amp;gt;&amp;#39;&lt;/span&gt;]
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:ycm_key_list_previous_completion &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; [&lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;C-P&amp;gt;&amp;#39;&lt;/span&gt;]
 &lt;span class=&quot;nb&quot;&gt;nnoremap&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;leader&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;gl :YcmCompleter GoToDeclaration&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;CR&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
