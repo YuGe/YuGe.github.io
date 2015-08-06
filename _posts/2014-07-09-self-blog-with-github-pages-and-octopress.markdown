@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "用GitHub Pages和Octopress创建个人博客"
-date: 2014-07-09 16:40:36 +0800
+date: 2014-07-09
 categories:
 - blog
 permalink: self-blog-with-github-pages-and-octopress
