@@ -10,12 +10,12 @@ permalink: /about/
 - Ubuntu, Mac OS X
 - Vimer
 - Python
+- NGS
 
 ### Contact me
 
-Find me on [Github][github] / [Twitter][Twitter] / [V2EX][] or just say `Hello` at
+Find me on [Github][github] / [V2EX][v2ex] or just say `Hello` at
 [yuge@yuge.me](yuge@yuge.me).
 
 [github]: https://github.com/yuge
-[twitter]: https://twitter.com/yugezh
-[V2EX]: http://www.v2ex.com/member/YuGe
+[v2ex]: http://www.v2ex.com/member/YuGe
