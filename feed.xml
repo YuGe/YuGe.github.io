@@ -5,20 +5,114 @@
     <description>从里寻她，灯火阑珊</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 06 Aug 2015 21:45:07 +0800</pubDate>
-    <lastBuildDate>Thu, 06 Aug 2015 21:45:07 +0800</lastBuildDate>
+    <pubDate>Fri, 07 Aug 2015 00:46:53 +0800</pubDate>
+    <lastBuildDate>Fri, 07 Aug 2015 00:46:53 +0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Setting git server</title>
-        <description>&lt;!--more--&gt;
+        <title>Setting git server and hooks</title>
+        <description>&lt;p&gt;Git server is used to set personal Git repository. It can be used to share
+source code with others. On the other side, it can be used to do auto deploy
+with git hooks. This makes it very convenient when you want to deploy
+automatically after post, such as web application server.&lt;/p&gt;
 
-&lt;h1 id=&quot;add-an-server-user&quot;&gt;add an server user&lt;/h1&gt;
+&lt;!--more--&gt;
 
+&lt;h2 id=&quot;add-an-server-user&quot;&gt;Add an server user&lt;/h2&gt;
+
+&lt;p&gt;The first thing you need to deal with is the authentication problem, if you
+need to write to the server. The most common and easiest method is to use
+SSH protocol. You only need to add an user in the server and use it to authority
+check and manage source code.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo adduser git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;add-ssh-public-key&quot;&gt;Add SSH public key&lt;/h2&gt;
+
+&lt;p&gt;If you want to access the server by SSH with this user. Your SSH public key need
+to be added to the user’s authorized_keys.&lt;/p&gt;
+
+&lt;p&gt;You can upload your local SSH public by &lt;code&gt;scp&lt;/code&gt; to the sever.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;scp ~/.ssh/id_rsa.pub user@sever:/tmp/&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;At the server side, append it to the &lt;code&gt;authorized_keys&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;cat /tmp/id_rsa.pub &amp;gt;&amp;gt; ~/.ssh/authorized_keys&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;make-a-directory-as-repository&quot;&gt;Make a directory as repository&lt;/h2&gt;
+
+&lt;p&gt;First we make a directory to save all source code, and then make a sub directory
+to save the code of a specific project. We use &lt;code&gt;git init&lt;/code&gt; with the &lt;code&gt;--bare&lt;/code&gt;
+option to initialize an repository without a working directory.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo mkdir /var/git
+chown git:git /var/git
+su git
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /var/git
+mkdir project.git
+git init --bare project.git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;set-remote-repository-for-local-project&quot;&gt;Set remote repository for local project&lt;/h2&gt;
+
+&lt;p&gt;If you don’t have a working project, you need to initialize one. Then add the
+server git repository as remote repository.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;mkdir myproject
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;myproject
+git init
+touch README
+git add .
+git commit -m &lt;span class=&quot;s2&quot;&gt;&amp;quot;initial commit&amp;quot;&lt;/span&gt;
+git remote add origin git@server:/var/git/project.git
+git push origin master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If you &lt;code&gt;commit&lt;/code&gt; with nothing in the project, you may meet a error &lt;code&gt;src refspec
+master does not match any&lt;/code&gt;. You can add a &lt;code&gt;README&lt;/code&gt; file and &lt;code&gt;commit&lt;/code&gt;, &lt;code&gt;push&lt;/code&gt;
+again.&lt;/p&gt;
+
+&lt;h2 id=&quot;set-git-hooks-for-auto-deploy&quot;&gt;Set git hooks for auto deploy&lt;/h2&gt;
+
+&lt;p&gt;Git hooks are actually files contain shell scripts. Git will run these scripts
+pre or post the push. The name of the file determined the time order to be run.
+The &lt;code&gt;post-receive&lt;/code&gt; hook runs after the entire process is completed, and thus can
+be used to do auto deploy.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;vim /var/git/project.git/hooks/post-receive&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;As it is actually shell script, you can write any code you want. An simple
+example of &lt;code&gt;post-receive&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;#! /bin/bash&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;read &lt;/span&gt;oldrev newrev ref
+&lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ref&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;~ .*/master&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Master ref received.  Deploying master branch to production...&amp;quot;&lt;/span&gt;
+        git --work-tree&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/var/www/html --git-dir&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/var/git/project.git checkout -f
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Ref $ref successfully received.  Doing nothing: only the master branch may be deployed on this server.&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This script update the working project on the server while a master branch was
+successfully received. If another branch was received, it will no nothing.&lt;/p&gt;
+
+&lt;p&gt;You need to add the execute permission to the file.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;chmod +x /var/git/project.git/hooks/post-receive&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now, the working project will be automatically updated while you push master
+branch to the server.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Thanks for your read, please email me if you found any error.&lt;/p&gt;
 </description>
         <pubDate>Thu, 06 Aug 2015 21:08:00 +0800</pubDate>
-        <link>/setting-git-server</link>
-        <guid isPermaLink="true">/setting-git-server</guid>
+        <link>/setting-git-server-and-hooks</link>
+        <guid isPermaLink="true">/setting-git-server-and-hooks</guid>
         
         
         <category>blog</category>
@@ -122,23 +216,6 @@ my life.&lt;/p&gt;
         <pubDate>Tue, 16 Sep 2014 18:35:41 +0800</pubDate>
         <link>/Shanghai-marathon-2014</link>
         <guid isPermaLink="true">/Shanghai-marathon-2014</guid>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Post with an images</title>
-        <description>&lt;p&gt;A sample post to show how images are being rendered on harmony.&lt;/p&gt;
-
-&lt;h3 id=&quot;image-from-external-host&quot;&gt;Image from external host&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://placekitten.com/g/900/300&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 31 Aug 2014 07:56:45 +0800</pubDate>
-        <link>/sample-post-with-images</link>
-        <guid isPermaLink="true">/sample-post-with-images</guid>
         
         
         <category>blog</category>

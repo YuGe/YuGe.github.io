@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Setting git server and hooks</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is YuGe's personal website.">
+        <link rel="canonical"
+        href="/setting-git-server-and-hooks">
+
+        <link href="/favicon.png" rel="icon">
+
+        <!-- Harmony styles -->
+        <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+
+        <!-- Modernizr js -->
+        <script async src="/assets/js/modernizr.js"></script>
+
+        <!-- IE Fixes -->
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="theme-base-01">
+        <header class="main-header">
+            <div class="wc-container">
+              <a href="/">
+                  <img src="/assets/images/yuge.png" alt="YuGe's Name Logo"/>
+              </a>
+                <h2>从里寻她，灯火阑珊</h2>
+                <ul>
+	<li>
+		<a href="/">Home</a>
+	</li>
+	<li>
+		<a href="/about">About</a><span>/</span>
+	</li>
+	<li>
+		<a href="/blog">Blog</a><span>/</span>
+	</li>
+</ul>
+
+            </div>
+        </header>
+        <div class="page-content wc-container">
+
+	<div class="post">
+		<h1>Setting git server and hooks</h1>
+		<p class="post-meta">
+			
+      <span class="categories">
+      blog
+      </span> |
+	    
+	    <span class="post-date">
+    	Aug 6, 2015
+	    </span>
+		</p>
+		<div class="post">
+			<p>Git server is used to set personal Git repository. It can be used to share
+source code with others. On the other side, it can be used to do auto deploy
+with git hooks. This makes it very convenient when you want to deploy
+automatically after post, such as web application server.</p>
+
+<!--more-->
+
+<h2 id="add-an-server-user">Add an server user</h2>
+
+<p>The first thing you need to deal with is the authentication problem, if you
+need to write to the server. The most common and easiest method is to use
+SSH protocol. You only need to add an user in the server and use it to authority
+check and manage source code.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo adduser git</code></pre></div>
+
+<h2 id="add-ssh-public-key">Add SSH public key</h2>
+
+<p>If you want to access the server by SSH with this user. Your SSH public key need
+to be added to the user’s authorized_keys.</p>
+
+<p>You can upload your local SSH public by <code>scp</code> to the sever.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">scp ~/.ssh/id_rsa.pub user@sever:/tmp/</code></pre></div>
+
+<p>At the server side, append it to the <code>authorized_keys</code>.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">cat /tmp/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys</code></pre></div>
+
+<h2 id="make-a-directory-as-repository">Make a directory as repository</h2>
+
+<p>First we make a directory to save all source code, and then make a sub directory
+to save the code of a specific project. We use <code>git init</code> with the <code>--bare</code>
+option to initialize an repository without a working directory.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo mkdir /var/git
+chown git:git /var/git
+su git
+<span class="nb">cd</span> /var/git
+mkdir project.git
+git init --bare project.git</code></pre></div>
+
+<h2 id="set-remote-repository-for-local-project">Set remote repository for local project</h2>
+
+<p>If you don’t have a working project, you need to initialize one. Then add the
+server git repository as remote repository.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">mkdir myproject
+<span class="nb">cd </span>myproject
+git init
+touch README
+git add .
+git commit -m <span class="s2">&quot;initial commit&quot;</span>
+git remote add origin git@server:/var/git/project.git
+git push origin master</code></pre></div>
+
+<p>If you <code>commit</code> with nothing in the project, you may meet a error <code>src refspec
+master does not match any</code>. You can add a <code>README</code> file and <code>commit</code>, <code>push</code>
+again.</p>
+
+<h2 id="set-git-hooks-for-auto-deploy">Set git hooks for auto deploy</h2>
+
+<p>Git hooks are actually files contain shell scripts. Git will run these scripts
+pre or post the push. The name of the file determined the time order to be run.
+The <code>post-receive</code> hook runs after the entire process is completed, and thus can
+be used to do auto deploy.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">vim /var/git/project.git/hooks/post-receive</code></pre></div>
+
+<p>As it is actually shell script, you can write any code you want. An simple
+example of <code>post-receive</code> file.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#! /bin/bash</span>
+
+<span class="k">while</span> <span class="nb">read </span>oldrev newrev ref
+<span class="k">do</span>
+    <span class="k">if</span> <span class="o">[[</span> <span class="nv">$ref</span> <span class="o">=</span>~ .*/master<span class="nv">$ </span><span class="o">]]</span><span class="p">;</span>
+    <span class="k">then</span>
+        <span class="nb">echo</span> <span class="s2">&quot;Master ref received.  Deploying master branch to production...&quot;</span>
+        git --work-tree<span class="o">=</span>/var/www/html --git-dir<span class="o">=</span>/var/git/project.git checkout -f
+    <span class="k">else</span>
+        <span class="nb">echo</span> <span class="s2">&quot;Ref $ref successfully received.  Doing nothing: only the master branch may be deployed on this server.&quot;</span>
+    <span class="k">fi</span>
+<span class="k">done</span></code></pre></div>
+
+<p>This script update the working project on the server while a master branch was
+successfully received. If another branch was received, it will no nothing.</p>
+
+<p>You need to add the execute permission to the file.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">chmod +x /var/git/project.git/hooks/post-receive</code></pre></div>
+
+<p>Now, the working project will be automatically updated while you push master
+branch to the server.</p>
+
+<hr />
+
+<p>Thanks for your read, please email me if you found any error.</p>
+
+		</div>
+	</div>
+
+
+	
+	<div class="related">
+		<h4>Related Posts</h2>
+		<ul class="posts">
+		    
+		    <li>
+			  <span>13 May 2015 &raquo;</span>
+			  <a href="/migration-from-octopress-to-harmony">Migration from Octopress to Harmony</a>
+		    </li>
+		    
+		    <li>
+			  <span>16 Sep 2014 &raquo;</span>
+			  <a href="/Shanghai-marathon-2014">准备参加上海国际马拉松</a>
+		    </li>
+		    
+		    <li>
+			  <span>12 Jul 2014 &raquo;</span>
+			  <a href="/my-vimrc-file">我的vimrc文件</a>
+		    </li>
+		    
+		</ul>
+	</div>
+	
+
+	<div class="post-footer">
+		<div class="column-1">
+			
+				<a href="/migration-from-octopress-to-harmony"><< Older</a>
+			
+		</div>
+		<div class="column-2"><a href="/ ">Home</a></div>
+		<div class="column-3">
+			
+				<span>Newer >></span>
+			
+		</div>
+	</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'YuGeZh';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+</div>
+
+        <footer class="main-footer">
+            <div class="wc-container">
+                <div class="column one">
+                    <h6>Few more links</h6>
+<ul class="menu">
+    <li><a href="/about">About</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/faq">FAQ</a></li>
+</ul>
+
+                </div>
+                <div class="column two">
+                    <h6>Follow me</h6>
+
+<ul class="social-media">
+
+
+    
+
+    
+    <li>
+        <a title="yuge on Github"
+            href="https://github.com/yuge"
+            class="github wc-img-replace" target="_blank">Github</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+</ul>
+
+                </div>
+            </div>
+            <p class="wc-container disclaimer">
+                
+
+            </p>
+        </footer>
+        <!-- jQuery -->
+        <script src="/assets/js/jquery.min.js"></script>
+        <!-- Site js -->
+        <script src="/assets/js/all.js"></script>
+        <!-- Google analytics  -->
+        
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-62923339-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+    </body>
+</html>
