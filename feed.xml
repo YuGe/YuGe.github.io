@@ -5,9 +5,25 @@
     <description>从里寻她，灯火阑珊</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 17 Jul 2015 15:24:56 +0800</pubDate>
-    <lastBuildDate>Fri, 17 Jul 2015 15:24:56 +0800</lastBuildDate>
+    <pubDate>Thu, 06 Aug 2015 21:45:07 +0800</pubDate>
+    <lastBuildDate>Thu, 06 Aug 2015 21:45:07 +0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Setting git server</title>
+        <description>&lt;!--more--&gt;
+
+&lt;h1 id=&quot;add-an-server-user&quot;&gt;add an server user&lt;/h1&gt;
+
+</description>
+        <pubDate>Thu, 06 Aug 2015 21:08:00 +0800</pubDate>
+        <link>/setting-git-server</link>
+        <guid isPermaLink="true">/setting-git-server</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Migration from Octopress to Harmony</title>
@@ -113,6 +129,23 @@ my life.&lt;/p&gt;
       </item>
     
       <item>
+        <title>Post with an images</title>
+        <description>&lt;p&gt;A sample post to show how images are being rendered on harmony.&lt;/p&gt;
+
+&lt;h3 id=&quot;image-from-external-host&quot;&gt;Image from external host&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://placekitten.com/g/900/300&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 31 Aug 2014 07:56:45 +0800</pubDate>
+        <link>/sample-post-with-images</link>
+        <guid isPermaLink="true">/sample-post-with-images</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
         <title>我的vimrc文件</title>
         <description>&lt;p&gt;这里贴出了我的vimrc文件，一些设置后面会有注释，但是没有特别详细的说明。&lt;/p&gt;
 
@@ -144,6 +177,7 @@ Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;gmarik/Vundle.vim&amp;#39;&lt;/
 &lt;span class=&quot;c&quot;&gt;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;&amp;quot;                                 Pulgins&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;iandoe/vim-osx-colorpicker&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;altercation/vim-colors-solarized&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;Valloric/YouCompleteMe&amp;#39;&lt;/span&gt;
 Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;scrooloose/syntastic&amp;#39;&lt;/span&gt;
@@ -264,7 +298,7 @@ Plugin &lt;span class=&quot;s1&quot;&gt;&amp;#39;hynek/vim-python-pep8-indent&am
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;statusline&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt;Directory#\ %&lt;span class=&quot;k&quot;&gt;p&lt;/span&gt;%%\ %#           &lt;span class=&quot;c&quot;&gt;&amp;quot;percentage of the file&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;&amp;quot; Special file type&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;&amp;quot; auto filetype html set filetype=htmldjango&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;auto&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;filetype&lt;/span&gt; html &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;filetype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;htmldjango
 &lt;span class=&quot;k&quot;&gt;auto&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;BufNewFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;BufReadPost&lt;/span&gt; *.md &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;filetype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;markdown
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:tex_flavor&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;latex&amp;#39;&lt;/span&gt;
 
@@ -349,12 +383,6 @@ map &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;leader&lt;span class=&q
 cnoremap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;C&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;A&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;Home&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
 cnoremap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;C&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;E&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;End&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
 
-&lt;span class=&quot;c&quot;&gt;&amp;quot; Move a line of text using Command+[jk]&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;nnoremap&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;D&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;mz&lt;/span&gt;:&lt;span class=&quot;k&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;+&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;cr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;`z
-&lt;span class=&quot;nb&quot;&gt;nnoremap&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;D&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;mz&lt;/span&gt;:&lt;span class=&quot;k&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;cr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;`z
-&lt;span class=&quot;nb&quot;&gt;vnoremap&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;D&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;k&quot;&gt;m&lt;/span&gt;&amp;#39;&lt;span class=&quot;p&quot;&gt;&amp;gt;+&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;cr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;`&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;my`&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;mzgv`yo`z
-&lt;span class=&quot;nb&quot;&gt;vnoremap&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;D&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;k&quot;&gt;m&lt;/span&gt;&amp;#39;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;cr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;`&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;my`&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;mzgv`yo`z
-
 &lt;span class=&quot;c&quot;&gt;&amp;quot; Compile and Run&lt;/span&gt;
 func&lt;span class=&quot;p&quot;&gt;!&lt;/span&gt; Run&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &amp;amp;&lt;span class=&quot;k&quot;&gt;filetype&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;c&amp;#39;&lt;/span&gt;
@@ -427,10 +455,11 @@ nmap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k
 map &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;leader&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;r&lt;/span&gt; :MRU&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;cr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;&amp;quot; Nerdtree&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:NERDTreeWinSize&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;25&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:NERDTreeWinSize&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:NERDTreeMinimalUI&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:NERDTreeIgnore&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;[&lt;span class=&quot;s1&quot;&gt;&amp;#39;\.vim$&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;\~$&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;\.pyc$&amp;#39;&lt;/span&gt;]
 map &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;leader&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;nn :NERDTreeToggle&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;cr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+map &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;leader&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;nc :NERDTreeCWD&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;cr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;&amp;quot; Syntastic&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:syntastic_always_populate_loc_list &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
@@ -676,7 +705,7 @@ rake new_page&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;super-awesome/page.ht
 &lt;p&gt;&lt;code&gt;_includes&lt;/code&gt;文件夹存放的是模板文件。&lt;code&gt;_deploy&lt;/code&gt;存放的是页面的模板。&lt;code&gt;_post&lt;/code&gt;是用些用markdown写的博客，&lt;code&gt;images&lt;/code&gt;存放的图片文件。&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 09 Jul 2014 16:40:36 +0800</pubDate>
+        <pubDate>Wed, 09 Jul 2014 00:00:00 +0800</pubDate>
         <link>/self-blog-with-github-pages-and-octopress</link>
         <guid isPermaLink="true">/self-blog-with-github-pages-and-octopress</guid>
         

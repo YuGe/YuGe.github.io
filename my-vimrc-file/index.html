@@ -91,6 +91,7 @@ Plugin <span class="s1">&#39;gmarik/Vundle.vim&#39;</span>
 <span class="c">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span>
 <span class="c">&quot;                                 Pulgins</span>
 <span class="c">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span>
+Plugin <span class="s1">&#39;iandoe/vim-osx-colorpicker&#39;</span>
 Plugin <span class="s1">&#39;altercation/vim-colors-solarized&#39;</span>
 Plugin <span class="s1">&#39;Valloric/YouCompleteMe&#39;</span>
 Plugin <span class="s1">&#39;scrooloose/syntastic&#39;</span>
@@ -211,7 +212,7 @@ Plugin <span class="s1">&#39;hynek/vim-python-pep8-indent&#39;</span>
 <span class="k">set</span> <span class="nb">statusline</span> <span class="p">+=</span>Directory#\ %<span class="k">p</span>%%\ %#           <span class="c">&quot;percentage of the file</span>
 
 <span class="c">&quot; Special file type</span>
-<span class="c">&quot; auto filetype html set filetype=htmldjango</span>
+<span class="k">auto</span> <span class="k">filetype</span> html <span class="k">set</span> <span class="k">filetype</span><span class="p">=</span>htmldjango
 <span class="k">auto</span> <span class="nb">BufNewFile</span><span class="p">,</span><span class="nb">BufReadPost</span> *.md <span class="k">set</span> <span class="k">filetype</span><span class="p">=</span>markdown
 <span class="k">let</span> <span class="k">g</span>:tex_flavor<span class="p">=</span><span class="s1">&#39;latex&#39;</span>
 
@@ -296,12 +297,6 @@ map <span class="p">&lt;</span>leader<span class="p">&gt;</span><span class="k">
 cnoremap <span class="p">&lt;</span>C<span class="p">-</span>A<span class="p">&gt;</span>  <span class="p">&lt;</span>Home<span class="p">&gt;</span>
 cnoremap <span class="p">&lt;</span>C<span class="p">-</span>E<span class="p">&gt;</span>  <span class="p">&lt;</span>End<span class="p">&gt;</span>
 
-<span class="c">&quot; Move a line of text using Command+[jk]</span>
-<span class="nb">nnoremap</span> <span class="p">&lt;</span>D<span class="p">-</span><span class="k">j</span><span class="p">&gt;</span> <span class="k">mz</span>:<span class="k">m</span><span class="p">+&lt;</span><span class="k">cr</span><span class="p">&gt;</span>`z
-<span class="nb">nnoremap</span> <span class="p">&lt;</span>D<span class="p">-</span><span class="k">k</span><span class="p">&gt;</span> <span class="k">mz</span>:<span class="k">m</span><span class="m">-2</span><span class="p">&lt;</span><span class="k">cr</span><span class="p">&gt;</span>`z
-<span class="nb">vnoremap</span> <span class="p">&lt;</span>D<span class="p">-</span><span class="k">j</span><span class="p">&gt;</span> :<span class="k">m</span>&#39;<span class="p">&gt;+&lt;</span><span class="k">cr</span><span class="p">&gt;</span>`<span class="p">&lt;</span>my`<span class="p">&gt;</span>mzgv`yo`z
-<span class="nb">vnoremap</span> <span class="p">&lt;</span>D<span class="p">-</span><span class="k">k</span><span class="p">&gt;</span> :<span class="k">m</span>&#39;<span class="p">&lt;</span><span class="m">-2</span><span class="p">&lt;</span><span class="k">cr</span><span class="p">&gt;</span>`<span class="p">&gt;</span>my`<span class="p">&lt;</span>mzgv`yo`z
-
 <span class="c">&quot; Compile and Run</span>
 func<span class="p">!</span> Run<span class="p">()</span>
     <span class="k">if</span> &amp;<span class="k">filetype</span> <span class="p">==</span> <span class="s1">&#39;c&#39;</span>
@@ -374,10 +369,11 @@ nmap <span class="p">&lt;</span><span class="k">silent</span><span class="p">&gt
 map <span class="p">&lt;</span>leader<span class="p">&gt;</span><span class="k">r</span> :MRU<span class="p">&lt;</span><span class="k">cr</span><span class="p">&gt;</span>
 
 <span class="c">&quot; Nerdtree</span>
-<span class="k">let</span> <span class="k">g</span>:NERDTreeWinSize<span class="p">=</span><span class="m">25</span>
+<span class="k">let</span> <span class="k">g</span>:NERDTreeWinSize<span class="p">=</span><span class="m">30</span>
 <span class="k">let</span> <span class="k">g</span>:NERDTreeMinimalUI<span class="p">=</span><span class="m">1</span>
 <span class="k">let</span> <span class="k">g</span>:NERDTreeIgnore<span class="p">=</span>[<span class="s1">&#39;\.vim$&#39;</span><span class="p">,</span> <span class="s1">&#39;\~$&#39;</span><span class="p">,</span><span class="s1">&#39;\.pyc$&#39;</span>]
 map <span class="p">&lt;</span>leader<span class="p">&gt;</span>nn :NERDTreeToggle<span class="p">&lt;</span><span class="k">cr</span><span class="p">&gt;</span>
+map <span class="p">&lt;</span>leader<span class="p">&gt;</span>nc :NERDTreeCWD<span class="p">&lt;</span><span class="k">cr</span><span class="p">&gt;</span>
 
 <span class="c">&quot; Syntastic</span>
 <span class="k">let</span> <span class="k">g</span>:syntastic_always_populate_loc_list <span class="p">=</span> <span class="m">1</span>
@@ -443,6 +439,11 @@ map <span class="p">&lt;</span>leader<span class="p">&gt;</span><span class="k">
 		<ul class="posts">
 		    
 		    <li>
+			  <span>06 Aug 2015 &raquo;</span>
+			  <a href="/setting-git-server">Setting git server</a>
+		    </li>
+		    
+		    <li>
 			  <span>13 May 2015 &raquo;</span>
 			  <a href="/migration-from-octopress-to-harmony">Migration from Octopress to Harmony</a>
 		    </li>
@@ -450,11 +451,6 @@ map <span class="p">&lt;</span>leader<span class="p">&gt;</span><span class="k">
 		    <li>
 			  <span>16 Sep 2014 &raquo;</span>
 			  <a href="/Shanghai-marathon-2014">准备参加上海国际马拉松</a>
-		    </li>
-		    
-		    <li>
-			  <span>09 Jul 2014 &raquo;</span>
-			  <a href="/self-blog-with-github-pages-and-octopress">用GitHub Pages和Octopress创建个人博客</a>
 		    </li>
 		    
 		</ul>
@@ -470,7 +466,7 @@ map <span class="p">&lt;</span>leader<span class="p">&gt;</span><span class="k">
 		<div class="column-2"><a href="/ ">Home</a></div>
 		<div class="column-3">
 			
-				<a href="/Shanghai-marathon-2014">Newer >></a>
+				<a href="/sample-post-with-images">Newer >></a>
 			
 		</div>
 	</div>
@@ -535,9 +531,7 @@ map <span class="p">&lt;</span>leader<span class="p">&gt;</span><span class="k">
             </p>
         </footer>
         <!-- jQuery -->
-        <script src="//cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-        <!-- When no internet load JQuery from local -->
-        <script>window.jQuery || document.write('<script src="/assets/js/jquery.min.js"><\/script>')</script>
+        <script src="/assets/js/jquery.min.js"></script>
         <!-- Site js -->
         <script src="/assets/js/all.js"></script>
         <!-- Google analytics  -->
