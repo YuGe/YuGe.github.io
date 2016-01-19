@@ -31,7 +31,7 @@
               <a href="/">
                   <img src="/assets/images/yuge.png" alt="YuGe's Name Logo"/>
               </a>
-                <h2>从里寻她，灯火阑珊</h2>
+                <h2>众里寻她，灯火阑珊</h2>
                 <ul>
 	<li>
 		<a href="/">Home</a>
@@ -93,14 +93,16 @@ Plug <span class="s1">&#39;Yggdroot/indentLine&#39;</span><span class="p">,</spa
 Plug <span class="s1">&#39;rizzatti/dash.vim&#39;</span><span class="p">,</span> {<span class="s1">&#39;on&#39;</span>: <span class="s1">&#39;DashSearch&#39;</span>}
 Plug <span class="s1">&#39;majutsushi/tagbar&#39;</span><span class="p">,</span> {<span class="s1">&#39;on&#39;</span>: <span class="s1">&#39;TagbarToggle&#39;</span>}
 Plug <span class="s1">&#39;sjl/gundo.vim&#39;</span><span class="p">,</span> {<span class="s1">&#39;on&#39;</span>: <span class="s1">&#39;GundoToggle&#39;</span>}
-Plug <span class="s1">&#39;yegappan/mru&#39;</span><span class="p">,</span> {<span class="s1">&#39;on&#39;</span>: <span class="s1">&#39;MRU&#39;</span>}
+Plug <span class="s1">&#39;yegappan/mru&#39;</span>
 Plug <span class="s1">&#39;terryma/vim-multiple-cursors&#39;</span>
 Plug <span class="s1">&#39;vim-scripts/YankRing.vim&#39;</span>
 Plug <span class="s1">&#39;jlanzarotta/bufexplorer&#39;</span>
+Plug <span class="s1">&#39;junegunn/vim-easy-align&#39;</span>
 Plug <span class="s1">&#39;Raimondi/delimitMate&#39;</span>
 Plug <span class="s1">&#39;Valloric/ListToggle&#39;</span>
 Plug <span class="s1">&#39;tomtom/tcomment_vim&#39;</span>
 Plug <span class="s1">&#39;tpope/vim-surround&#39;</span>
+Plug <span class="s1">&#39;tpope/vim-repeat&#39;</span>
 Plug <span class="s1">&#39;kien/ctrlp.vim&#39;</span>
 Plug <span class="s1">&#39;vim-scripts/matchit.zip&#39;</span><span class="p">,</span> {<span class="s1">&#39;for&#39;</span>: [<span class="s1">&#39;html&#39;</span><span class="p">,</span> <span class="s1">&#39;htmldjango&#39;</span>]}
 Plug <span class="s1">&#39;mattn/emmet-vim&#39;</span><span class="p">,</span> {<span class="s1">&#39;for&#39;</span>: [<span class="s1">&#39;html&#39;</span><span class="p">,</span> <span class="s1">&#39;htmldjango&#39;</span>]}
@@ -144,7 +146,7 @@ Plug <span class="s1">&#39;hynek/vim-python-pep8-indent&#39;</span><span class="
 <span class="k">set</span> <span class="nb">autoread</span>                        <span class="c">&quot; Auto read when file changed outside</span>
 <span class="k">set</span> <span class="nb">autowrite</span>                       <span class="c">&quot; Auto write</span>
 <span class="k">set</span> <span class="nb">backspace</span><span class="p">=</span>indent<span class="p">,</span><span class="nb">eol</span><span class="p">,</span><span class="k">start</span>      <span class="c">&quot; Configure backspace</span>
-<span class="k">set</span> <span class="nb">clipboard</span><span class="p">+=</span>unnamedplus<span class="p">,</span>unnamed  <span class="c">&quot; Share clipboard with system</span>
+<span class="c">&quot; set clipboard+=unnamedplus,unnamed  &quot; Share clipboard with system</span>
 <span class="k">set</span> <span class="nb">completeopt</span><span class="p">=</span>menu<span class="p">,</span>menuone	    <span class="c">&quot; Close preview window</span>
 <span class="k">set</span> <span class="nb">hlsearch</span>                        <span class="c">&quot; Highlight search results</span>
 <span class="k">set</span> <span class="nb">incsearch</span>                       <span class="c">&quot; Show result while type</span>
@@ -280,7 +282,7 @@ cnoremap <span class="p">&lt;</span>C<span class="p">-</span>E<span class="p">&g
 <span class="c">&quot; Ctrlp</span>
 <span class="k">let</span> <span class="k">g</span>:ctrlp_max_height<span class="p">=</span><span class="m">15</span>
 <span class="k">let</span> <span class="k">g</span>:ctrlp_working_path_mode<span class="p">=</span><span class="m">0</span>
-<span class="k">let</span> <span class="k">g</span>:ctrlp_map <span class="p">=</span> <span class="s1">&#39;&lt;leader&gt;p&#39;</span>
+<span class="k">let</span> <span class="k">g</span>:ctrlp_map <span class="p">=</span> <span class="s1">&#39;&lt;leader&gt;,&#39;</span>
 
 <span class="c">&quot; Dash</span>
 nmap <span class="p">&lt;</span><span class="k">silent</span><span class="p">&gt;</span> <span class="p">&lt;</span>leader<span class="p">&gt;</span><span class="k">ds</span> <span class="p">&lt;</span>Plug<span class="p">&gt;</span>DashSearch
@@ -289,6 +291,10 @@ nmap <span class="p">&lt;</span><span class="k">silent</span><span class="p">&gt
 <span class="k">let</span> delimitMate_nesting_quotes <span class="p">=</span> [<span class="s1">&#39;&quot;&#39;</span><span class="p">,</span> <span class="s1">&#39;`&#39;</span>]
 <span class="k">let</span> delimitMate_expand_cr <span class="p">=</span> <span class="m">1</span>
 <span class="k">let</span> delimitMate_expand_space <span class="p">=</span> <span class="m">1</span>
+
+<span class="c">&quot; Easy align</span>
+xmap ga <span class="p">&lt;</span>plug<span class="p">&gt;(</span>EasyAlign<span class="p">)</span>
+nmap ga <span class="p">&lt;</span>plug<span class="p">&gt;(</span>EasyAlign<span class="p">)</span>
 
 <span class="c">&quot; Gundo</span>
 <span class="nb">nnoremap</span> <span class="p">&lt;</span>F8<span class="p">&gt;</span> :GundoToggle<span class="p">&lt;</span><span class="k">cr</span><span class="p">&gt;</span>
@@ -327,7 +333,6 @@ map <span class="p">&lt;</span>leader<span class="p">&gt;</span>nc :NERDTreeCWD<
 <span class="k">let</span> <span class="k">g</span>:tagbar_autofocus <span class="p">=</span> <span class="m">1</span>
 <span class="k">let</span> <span class="k">g</span>:tagbar_compact <span class="p">=</span> <span class="m">1</span>
 <span class="k">let</span> <span class="k">g</span>:tagbar_show_visibility <span class="p">=</span> <span class="m">0</span>
-<span class="k">let</span> <span class="k">g</span>:tagbar_expand <span class="p">=</span> <span class="m">1</span>
 <span class="k">let</span> <span class="k">g</span>:tagbar_indent <span class="p">=</span> <span class="m">1</span>
 <span class="k">let</span> <span class="k">g</span>:tagbar_foldlevel <span class="p">=</span> <span class="m">2</span>
 <span class="k">let</span> <span class="k">g</span>:tagbar_ctags_bin <span class="p">=</span> <span class="s1">&#39;/usr/local/bin/ctags&#39;</span>
@@ -345,6 +350,7 @@ map <span class="p">&lt;</span><span class="k">silent</span><span class="p">&gt;
 <span class="k">let</span> <span class="k">g</span>:syntastic_check_on_wq <span class="p">=</span> <span class="m">0</span>
 <span class="k">let</span> <span class="k">g</span>:syntastic_javascript_checkers <span class="p">=</span> [<span class="s1">&#39;jshint&#39;</span>]
 <span class="k">let</span> <span class="k">g</span>:syntastic_python_checkers<span class="p">=</span>[<span class="s1">&#39;flake8&#39;</span>]
+<span class="k">let</span> <span class="k">g</span>:syntastic_python_flake8_args<span class="p">=</span><span class="s1">&#39;--ignore=E501&#39;</span>
 <span class="k">let</span> <span class="k">g</span>:syntastic_html_tidy_exec <span class="p">=</span> <span class="s1">&#39;tidy5&#39;</span>
 
 <span class="c">&quot; YouCompleteMe</span>

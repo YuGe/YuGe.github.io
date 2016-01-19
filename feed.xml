@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <description>从里寻她，灯火阑珊</description>
+    <description>众里寻她，灯火阑珊</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 13 Nov 2015 15:56:22 +0800</pubDate>
-    <lastBuildDate>Fri, 13 Nov 2015 15:56:22 +0800</lastBuildDate>
+    <pubDate>Tue, 19 Jan 2016 23:12:08 +0800</pubDate>
+    <lastBuildDate>Tue, 19 Jan 2016 23:12:08 +0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -256,14 +256,16 @@ Plug &lt;span class=&quot;s1&quot;&gt;&amp;#39;Yggdroot/indentLine&amp;#39;&lt;/
 Plug &lt;span class=&quot;s1&quot;&gt;&amp;#39;rizzatti/dash.vim&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; {&lt;span class=&quot;s1&quot;&gt;&amp;#39;on&amp;#39;&lt;/span&gt;: &lt;span class=&quot;s1&quot;&gt;&amp;#39;DashSearch&amp;#39;&lt;/span&gt;}
 Plug &lt;span class=&quot;s1&quot;&gt;&amp;#39;majutsushi/tagbar&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; {&lt;span class=&quot;s1&quot;&gt;&amp;#39;on&amp;#39;&lt;/span&gt;: &lt;span class=&quot;s1&quot;&gt;&amp;#39;TagbarToggle&amp;#39;&lt;/span&gt;}
 Plug &lt;span class=&quot;s1&quot;&gt;&amp;#39;sjl/gundo.vim&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; {&lt;span class=&quot;s1&quot;&gt;&amp;#39;on&amp;#39;&lt;/span&gt;: &lt;span class=&quot;s1&quot;&gt;&amp;#39;GundoToggle&amp;#39;&lt;/span&gt;}
-Plug &lt;span class=&quot;s1&quot;&gt;&amp;#39;yegappan/mru&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; {&lt;span class=&quot;s1&quot;&gt;&amp;#39;on&amp;#39;&lt;/span&gt;: &lt;span class=&quot;s1&quot;&gt;&amp;#39;MRU&amp;#39;&lt;/span&gt;}
+Plug &lt;span class=&quot;s1&quot;&gt;&amp;#39;yegappan/mru&amp;#39;&lt;/span&gt;
 Plug &lt;span class=&quot;s1&quot;&gt;&amp;#39;terryma/vim-multiple-cursors&amp;#39;&lt;/span&gt;
 Plug &lt;span class=&quot;s1&quot;&gt;&amp;#39;vim-scripts/YankRing.vim&amp;#39;&lt;/span&gt;
 Plug &lt;span class=&quot;s1&quot;&gt;&amp;#39;jlanzarotta/bufexplorer&amp;#39;&lt;/span&gt;
+Plug &lt;span class=&quot;s1&quot;&gt;&amp;#39;junegunn/vim-easy-align&amp;#39;&lt;/span&gt;
 Plug &lt;span class=&quot;s1&quot;&gt;&amp;#39;Raimondi/delimitMate&amp;#39;&lt;/span&gt;
 Plug &lt;span class=&quot;s1&quot;&gt;&amp;#39;Valloric/ListToggle&amp;#39;&lt;/span&gt;
 Plug &lt;span class=&quot;s1&quot;&gt;&amp;#39;tomtom/tcomment_vim&amp;#39;&lt;/span&gt;
 Plug &lt;span class=&quot;s1&quot;&gt;&amp;#39;tpope/vim-surround&amp;#39;&lt;/span&gt;
+Plug &lt;span class=&quot;s1&quot;&gt;&amp;#39;tpope/vim-repeat&amp;#39;&lt;/span&gt;
 Plug &lt;span class=&quot;s1&quot;&gt;&amp;#39;kien/ctrlp.vim&amp;#39;&lt;/span&gt;
 Plug &lt;span class=&quot;s1&quot;&gt;&amp;#39;vim-scripts/matchit.zip&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; {&lt;span class=&quot;s1&quot;&gt;&amp;#39;for&amp;#39;&lt;/span&gt;: [&lt;span class=&quot;s1&quot;&gt;&amp;#39;html&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;htmldjango&amp;#39;&lt;/span&gt;]}
 Plug &lt;span class=&quot;s1&quot;&gt;&amp;#39;mattn/emmet-vim&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; {&lt;span class=&quot;s1&quot;&gt;&amp;#39;for&amp;#39;&lt;/span&gt;: [&lt;span class=&quot;s1&quot;&gt;&amp;#39;html&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;htmldjango&amp;#39;&lt;/span&gt;]}
@@ -307,7 +309,7 @@ Plug &lt;span class=&quot;s1&quot;&gt;&amp;#39;hynek/vim-python-pep8-indent&amp;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;autoread&lt;/span&gt;                        &lt;span class=&quot;c&quot;&gt;&amp;quot; Auto read when file changed outside&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;autowrite&lt;/span&gt;                       &lt;span class=&quot;c&quot;&gt;&amp;quot; Auto write&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;backspace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;indent&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;eol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;start&lt;/span&gt;      &lt;span class=&quot;c&quot;&gt;&amp;quot; Configure backspace&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;clipboard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt;unnamedplus&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;unnamed  &lt;span class=&quot;c&quot;&gt;&amp;quot; Share clipboard with system&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;quot; set clipboard+=unnamedplus,unnamed  &amp;quot; Share clipboard with system&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;completeopt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;menu&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;menuone	    &lt;span class=&quot;c&quot;&gt;&amp;quot; Close preview window&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;hlsearch&lt;/span&gt;                        &lt;span class=&quot;c&quot;&gt;&amp;quot; Highlight search results&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;incsearch&lt;/span&gt;                       &lt;span class=&quot;c&quot;&gt;&amp;quot; Show result while type&lt;/span&gt;
@@ -443,7 +445,7 @@ cnoremap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;C&lt;span class=&q
 &lt;span class=&quot;c&quot;&gt;&amp;quot; Ctrlp&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:ctrlp_max_height&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;15&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:ctrlp_working_path_mode&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:ctrlp_map &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;leader&amp;gt;p&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:ctrlp_map &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;leader&amp;gt;,&amp;#39;&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;&amp;quot; Dash&lt;/span&gt;
 nmap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;silent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;leader&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;ds&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;Plug&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;DashSearch
@@ -452,6 +454,10 @@ nmap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; delimitMate_nesting_quotes &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; [&lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;quot;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;`&amp;#39;&lt;/span&gt;]
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; delimitMate_expand_cr &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; delimitMate_expand_space &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;quot; Easy align&lt;/span&gt;
+xmap ga &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;plug&lt;span class=&quot;p&quot;&gt;&amp;gt;(&lt;/span&gt;EasyAlign&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+nmap ga &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;plug&lt;span class=&quot;p&quot;&gt;&amp;gt;(&lt;/span&gt;EasyAlign&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;&amp;quot; Gundo&lt;/span&gt;
 &lt;span class=&quot;nb&quot;&gt;nnoremap&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;F8&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; :GundoToggle&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;cr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
@@ -490,7 +496,6 @@ map &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;leader&lt;span class=&q
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:tagbar_autofocus &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:tagbar_compact &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:tagbar_show_visibility &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:tagbar_expand &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:tagbar_indent &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:tagbar_foldlevel &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:tagbar_ctags_bin &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;/usr/local/bin/ctags&amp;#39;&lt;/span&gt;
@@ -508,6 +513,7 @@ map &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:syntastic_check_on_wq &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:syntastic_javascript_checkers &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; [&lt;span class=&quot;s1&quot;&gt;&amp;#39;jshint&amp;#39;&lt;/span&gt;]
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:syntastic_python_checkers&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;[&lt;span class=&quot;s1&quot;&gt;&amp;#39;flake8&amp;#39;&lt;/span&gt;]
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:syntastic_python_flake8_args&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;--ignore=E501&amp;#39;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;g&lt;/span&gt;:syntastic_html_tidy_exec &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;tidy5&amp;#39;&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;&amp;quot; YouCompleteMe&lt;/span&gt;
