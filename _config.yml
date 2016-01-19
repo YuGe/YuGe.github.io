@@ -13,7 +13,7 @@ url:
 harmony:
   name: YuGe
   # Little description about your site
-  description: 从里寻她，灯火阑珊
+  description: 众里寻她，灯火阑珊
   meta_description: This is YuGe's personal website.
   basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
   author: # Author details
